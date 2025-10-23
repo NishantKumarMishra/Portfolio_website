@@ -39,6 +39,11 @@ export default function Hero() {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold" data-testid="text-hero-title">
               Software Engineer
             </h1>
+            <div className="flex justify-center">
+              <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold" data-testid="badge-system-design">
+                System Design Expert
+              </span>
+            </div>
             <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-hero-subtitle">
               Building scalable systems with Java, React & Cloud
             </p>

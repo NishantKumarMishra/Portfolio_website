@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import aiTestingImage from "@assets/generated_images/AI_testing_assistant_dashboard_3ba308f6.png";
 import employeeManagementImage from "@assets/generated_images/Employee_management_system_interface_f868cf1a.png";
+import vehicleBookingImage from "@assets/generated_images/Vehicle_booking_system_interface_094b32e9.png";
 import techBlogImage from "@assets/generated_images/Tech_blog_platform_interface_89290caa.png";
 import shortestPathImage from "@assets/generated_images/Shortest_path_visualizer_bd1a477a.png";
 import treeVisualizerImage from "@assets/generated_images/Tree_visualizer_interface_66d04420.png";
@@ -35,6 +36,14 @@ export default function Projects() {
         "Full-stack CRUD application with Spring Boot + React + MySQL, featuring authentication, employee search, and pagination. Successfully deployed on AWS with CI/CD pipeline.",
       image: employeeManagementImage,
       techStack: ["Java", "Spring Boot", "ReactJS", "MySQL", "AWS"],
+    },
+    {
+      title: "Vehicle Booking System",
+      year: "2022",
+      description:
+        "Full-stack vehicle booking platform using Spring Boot and ReactJS, enabling real-time booking and admin control. Built secure REST APIs for user registration, login, and booking management with seamless frontend-backend integration.",
+      image: vehicleBookingImage,
+      techStack: ["Java", "Spring Boot", "ReactJS", "MySQL", "REST API"],
     },
     {
       title: "Tech Blog Platform",

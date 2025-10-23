@@ -4,6 +4,7 @@ import profileImage from "@assets/generated_images/Professional_engineer_headsho
 
 export default function About() {
   const focuses = [
+    "System Design Expert",
     "Distributed Systems",
     "Full-Stack Development",
     "Cloud Architecture",
