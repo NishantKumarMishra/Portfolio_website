@@ -18,10 +18,22 @@ export default function Achievements() {
       highlight: "Ranked #1 on GeeksforGeeks",
     },
     {
+      icon: <Trophy className="w-8 h-8" />,
+      title: "LeetCode Contest Achievement",
+      description: "Highest Rank of 1428 in LeetCode Biweekly Contest 101",
+      highlight: "500+ Problems Solved",
+    },
+    {
+      icon: <Award className="w-8 h-8" />,
+      title: "HackerRank 5-Star Coder",
+      description: "Achieved 5-Star rating demonstrating expertise in algorithms",
+      highlight: "5-Star Coder",
+    },
+    {
       icon: <Award className="w-8 h-8" />,
       title: "NPTEL Certification",
       description: "Certified in Data Structures & Algorithms using Java",
-      highlight: "NPTEL",
+      highlight: "NPTEL Certified",
     },
     {
       icon: <Trophy className="w-8 h-8" />,
@@ -38,7 +50,7 @@ export default function Achievements() {
           Awards & Certifications
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {achievements.map((achievement, index) => (
             <Card
               key={index}

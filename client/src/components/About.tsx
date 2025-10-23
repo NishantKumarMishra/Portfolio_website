@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import profileImage from "@assets/generated_images/Professional_headshot_portrait_dad792ef.png";
+import profileImage from "@assets/generated_images/Professional_engineer_headshot_449f2450.png";
 
 export default function About() {
   const focuses = [

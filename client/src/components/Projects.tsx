@@ -4,6 +4,11 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import aiTestingImage from "@assets/generated_images/AI_testing_assistant_dashboard_3ba308f6.png";
 import employeeManagementImage from "@assets/generated_images/Employee_management_system_interface_f868cf1a.png";
+import techBlogImage from "@assets/generated_images/Tech_blog_platform_interface_89290caa.png";
+import shortestPathImage from "@assets/generated_images/Shortest_path_visualizer_bd1a477a.png";
+import treeVisualizerImage from "@assets/generated_images/Tree_visualizer_interface_66d04420.png";
+import nQueensImage from "@assets/generated_images/N-Queens_visualizer_b4d737f1.png";
+import foodBlogImage from "@assets/generated_images/Food_blog_interface_4e36330f.png";
 
 interface Project {
   title: string;
@@ -31,6 +36,46 @@ export default function Projects() {
       image: employeeManagementImage,
       techStack: ["Java", "Spring Boot", "ReactJS", "MySQL", "AWS"],
     },
+    {
+      title: "Tech Blog Platform",
+      year: "2024",
+      description:
+        "Technical blog platform built with Java Servlets using MVC architecture. Features HTTP request management, session handling, JDBC for MySQL integration, and user authentication with servlet filters.",
+      image: techBlogImage,
+      techStack: ["Java", "Servlets", "JSP", "MySQL", "JDBC", "MVC"],
+    },
+    {
+      title: "Shortest Path Visualizer",
+      year: "2024",
+      description:
+        "Interactive pathfinding visualizer implementing graph data structures and Dijkstra's algorithm. Real-time visualization of the shortest path calculation with step-by-step animation.",
+      image: shortestPathImage,
+      techStack: ["JavaScript", "HTML", "CSS", "Algorithms", "Data Structures"],
+    },
+    {
+      title: "Tree Visualizer",
+      year: "2024",
+      description:
+        "Comprehensive tree visualization tool for Binary Search Trees, Binary Trees, and Max Heaps. Built with modular and maintainable code for educational purposes.",
+      image: treeVisualizerImage,
+      techStack: ["JavaScript", "HTML", "CSS", "Data Structures"],
+    },
+    {
+      title: "N-Queens Visualizer",
+      year: "2024",
+      description:
+        "Interactive N-Queens problem solver implementing backtracking algorithm. Visual display of all possible solutions with animated step-by-step solving process.",
+      image: nQueensImage,
+      techStack: ["JavaScript", "HTML", "CSS", "Backtracking", "Algorithms"],
+    },
+    {
+      title: "Food Blog",
+      year: "2024",
+      description:
+        "Modern food blogging platform developed during Dev Wizards Hackathon at Sathyabama University. Features recipe sharing, user interactions, and responsive design.",
+      image: foodBlogImage,
+      techStack: ["Java", "Spring Boot", "HTML", "CSS", "Bootstrap"],
+    },
   ];
 
   return (
@@ -40,7 +85,7 @@ export default function Projects() {
           Featured Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover-elevate" data-testid={`card-project-${index}`}>
               <div className="aspect-video overflow-hidden">
