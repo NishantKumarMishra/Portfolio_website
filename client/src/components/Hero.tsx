@@ -5,9 +5,11 @@ import heroBackground from "@assets/generated_images/Tech_hero_background_c727a4
 export default function Hero() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/attached_assets/Nishant_1761243653228.pdf";
-    link.download = "Nishant_Kumar_Mishra_Resume.pdf";
+    link.href = "/attached_file/Nishant_1761243653228.pdf"; // file in public folder
+    link.download = "Nishant.pdf";
+    document.body.appendChild(link); // sometimes needed
     link.click();
+    document.body.removeChild(link);
   };
 
   const scrollToSection = (sectionId: string) => {
