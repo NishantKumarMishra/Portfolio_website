@@ -23,6 +23,8 @@ import { fileURLToPath } from "url";
 var __filename = fileURLToPath(import.meta.url);
 var __dirname = path.dirname(__filename);
 var vite_config_default = defineConfig({
+  // 👇 ADD THIS LINE — fixes 404 and blank screen
+  base: "./",
   plugins: [
     react(),
     runtimeErrorOverlay(),

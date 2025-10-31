@@ -9,6 +9,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
+  // 👇 ADD THIS LINE — fixes 404 and blank screen
+  base: './',
+
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -38,7 +41,6 @@ export default defineConfig({
   },
   server: {
     fs: {
-      
       strict: true,
       deny: ["**/.*"],
     },
