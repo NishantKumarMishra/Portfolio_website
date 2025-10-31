@@ -58,7 +58,7 @@ export default function Hero() {
             </span>
             <span className="flex items-center gap-2" data-testid="text-stat-experience">
               <span className="w-2 h-2 rounded-full bg-primary" />
-              3+ Years Experience
+              1+ Years Experience
             </span>
             <span className="flex items-center gap-2" data-testid="text-stat-expertise">
               <span className="w-2 h-2 rounded-full bg-primary" />
